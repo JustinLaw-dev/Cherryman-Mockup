@@ -1,0 +1,9 @@
+.nav {
+  &__list {
+    list-style: none;
+
+    &--item {
+      font-size: 1.6rem;
+    }
+  }
+}

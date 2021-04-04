@@ -1,0 +1,10 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}

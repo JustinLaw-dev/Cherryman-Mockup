@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Verb';
+  src: url('/assets/fonts/Yellow\ Design\ Studio\ -\ VerbMedium.otf')
+    format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Verb';
+  src: url('/assets/fonts/Yellow\ Design\ Studio\ -\ VerbLight.otf')
+    format('opentype');
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Verb', Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  &__heading {
+    font-size: 6.2rem;
+    color: white;
+  }
+
+  &__text {
+    font-size: 2.2rem;
+
+    &--d {
+      font-size: 3.1rem;
+    }
+
+    &--d,
+    &--name {
+      font-weight: 500;
+    }
+  }
+}
