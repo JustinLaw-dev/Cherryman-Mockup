@@ -1,9 +1,17 @@
 .nav {
   &__list {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
 
-    &--item {
-      font-size: 1.7rem;
+    &--icon {
+      width: 10px;
+
+      @include respond(phone) {
+        margin-left: 2rem;
+      }
     }
   }
 }
