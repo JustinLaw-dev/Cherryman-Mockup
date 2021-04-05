@@ -305,7 +305,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   .hero {
-    background: url("../../assets/img/phone bg.jpg");
+    background: url("https://github.com/JustinLaw-dev/Cherryman-Mockup/blob/main/assets/img/phone%20bg.jpg");
     background-size: cover;
     background-position-x: -26px;
     height: 95vh;
