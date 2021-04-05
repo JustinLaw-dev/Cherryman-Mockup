@@ -1,12 +1,15 @@
 .header {
   width: 100%;
-  padding: 0px 7rem;
+  padding: 0px 10rem;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 
-  &__logo {
-    font-size: 3rem;
-    font-weight: 400;
+  @include respond(tab-port) {
+    padding: 0px 6rem;
+  }
+
+  @include respond(phone) {
+    padding: 0px 1rem;
   }
 }
