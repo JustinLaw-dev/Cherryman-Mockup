@@ -1,7 +1,9 @@
 .header {
   width: 100%;
+  padding: 0px 7rem;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 
   &__logo {
     font-size: 3rem;
