@@ -16,14 +16,41 @@ body {
   font-family: 'Verb', Arial, Helvetica, sans-serif;
 }
 
+.header {
+  &__logo {
+    letter-spacing: -2px;
+  }
+}
+
 .hero {
   &__heading {
-    font-size: 6.2rem;
+    font-size: 5.5rem;
+    font-weight: 500;
     color: white;
+
+    @include respond(tab-port-pro) {
+      line-height: 1;
+      font-size: 5rem;
+      width: 51%;
+    }
+
+    @include respond(tab-port) {
+      font-size: 4.5rem;
+      width: 65%;
+    }
   }
 
   &__text {
+    color: black;
     font-size: 2.2rem;
+
+    @include respond(tab-port-pro) {
+      color: white;
+      font-size: 1.6rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.2rem;
+    }
 
     &--d {
       font-size: 3.1rem;

@@ -1,16 +1,48 @@
 .hero {
-  background-color: #f0ebe8;
+  background: #f0ebe8;
   position: relative;
   width: 100%;
   height: 90vh;
+  overflow: hidden;
 
-  &__heading {
-    // position: absolute;
+  @include respond(tab-port-pro) {
+    background: url('../../assets/img/tablet\ bg\ copy.png');
+    background-size: cover;
   }
 
-  &__container {
+  &__heading {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 20%;
+    left: 8.5%;
+  }
+
+  &__text {
+    position: absolute;
+    top: 33%;
+    left: 8.5%;
+
+    @include respond(tab-port-pro) {
+      top: 43%;
+    }
+
+    @include respond(tab-port) {
+      top: 45%;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 55%;
+    left: 8.5%;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: -63vh;
+    right: -33%;
+
+    @include respond(tab-port-pro) {
+      display: none;
+    }
   }
 }

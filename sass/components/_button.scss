@@ -4,4 +4,9 @@
   height: 2rem;
   background-color: transparent;
   border: 1px solid black;
+  opacity: 1;
+
+  @include respond(tab-port-pro) {
+    opacity: 0;
+  }
 }
