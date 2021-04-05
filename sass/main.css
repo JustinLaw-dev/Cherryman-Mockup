@@ -122,13 +122,13 @@ body {
 
 @font-face {
   font-family: 'Verb';
-  src: url("./assets/fonts/Yellow Design Studio - VerbMedium.otf") format("opentype");
+  src: url("/assets/fonts/Yellow Design Studio - VerbMedium.otf") format("opentype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Verb';
-  src: url("./assets/fonts/Yellow Design Studio - VerbLight.otf") format("opentype");
+  src: url("/assets/fonts/Yellow Design Studio - VerbLight.otf") format("opentype");
   font-weight: 400;
 }
 
