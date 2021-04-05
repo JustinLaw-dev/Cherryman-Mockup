@@ -5,29 +5,32 @@
   height: 90vh;
   overflow: hidden;
 
+  @include respond(small-desktop) {
+    height: 89vh;
+  }
   @include respond(tab-port-pro) {
-    background: url('../../assets/img/tablet\ bg\ copy.png');
+    background: url('../../assets/img/tablet\ bg\ copy1.png');
     background-size: cover;
+    height: 92vh;
   }
 
-  &__heading {
+  @include respond(tab-port) {
+    background: url('../../assets/img/tablet\ bg\ copy1.png');
+    background-size: cover;
+    height: 90vh;
+  }
+
+  @include respond(phone) {
+    background: url('../../assets/img/phone\ bg.jpg');
+    background-size: cover;
+    background-position-x: -26px;
+    height: 95vh;
+  }
+
+  &__text--wrapper {
     position: absolute;
     top: 20%;
     left: 8.5%;
-  }
-
-  &__text {
-    position: absolute;
-    top: 33%;
-    left: 8.5%;
-
-    @include respond(tab-port-pro) {
-      top: 43%;
-    }
-
-    @include respond(tab-port) {
-      top: 45%;
-    }
   }
 
   &__btn {
@@ -37,8 +40,9 @@
   }
 
   &__img {
+    max-width: 100%;
     position: absolute;
-    bottom: -63vh;
+    top: 60%;
     right: -33%;
 
     @include respond(tab-port-pro) {
