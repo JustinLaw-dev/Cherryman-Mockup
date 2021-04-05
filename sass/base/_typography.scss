@@ -18,42 +18,58 @@ body {
 
 .header {
   &__logo {
+    font-size: 4.8rem;
+    font-weight: 400;
     letter-spacing: -2px;
+  }
+}
+
+.nav__list {
+  &--item {
+    font-size: 3.8rem;
   }
 }
 
 .hero {
   &__heading {
-    font-size: 5.5rem;
+    font-size: 8.5rem;
     font-weight: 500;
     color: white;
 
+    @include respond(small-desktop) {
+      font-size: 7.5rem;
+    }
+
     @include respond(tab-port-pro) {
-      line-height: 1;
-      font-size: 5rem;
-      width: 51%;
+      line-height: 0.9;
+      font-size: 8rem;
+      width: 60%;
     }
 
     @include respond(tab-port) {
-      font-size: 4.5rem;
-      width: 65%;
+      font-size: 6.5rem;
+      width: 68%;
     }
   }
 
   &__text {
     color: black;
-    font-size: 2.2rem;
+    font-size: 3.1rem;
+
+    @include respond(small-desktop) {
+      font-size: 2.6rem;
+    }
 
     @include respond(tab-port-pro) {
       color: white;
-      font-size: 1.6rem;
+      font-size: 2.6rem;
     }
     @include respond(tab-port) {
-      font-size: 1.2rem;
+      font-size: 2rem;
     }
 
     &--d {
-      font-size: 3.1rem;
+      font-size: 4.1rem;
     }
 
     &--d,
